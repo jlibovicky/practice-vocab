@@ -56,7 +56,7 @@ def main():
             print(
                 f"Round {learn_round} finished, "
                 f"{len(missed_pairs)} errors to resolve.")
-            for _ in range(min(4, learn_round)):
+            for _ in range(min(3, learn_round)):
                 pairs.extend(missed_pairs)
             random.shuffle(pairs)
     print(f"Done, accuracy {100 * correct / total:.2f}%.")
