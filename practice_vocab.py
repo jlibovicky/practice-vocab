@@ -13,13 +13,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("data", type=argparse.FileType("r"))
     parser.add_argument("-b", dest="both", action="store_true", default=False)
+    parser.add_argument("-r", dest="reverse", action="store_true", default=False)
     args = parser.parse_args()
 
     pairs = []
     for line in args.data:
         src, tgt = line.strip().split("\t")
-        pairs.append((src, tgt))
-        if args.both:
+        if not args.reverse:
+            pairs.append((src, tgt))
+        if args.both or args.reverse:
             pairs.append((tgt, src))
     random.shuffle(pairs)
 
