@@ -42,11 +42,7 @@ def main():
                 SPACES.sub(" ", BRACKET.sub(" ", src)).strip().split(", "))
             answer = input()
             if answer.strip() in possible_answers:
-                cprint("CORRECT", 'green', end='')
-                if len(possible_answers) == 1:
-                    print()
-                else:
-                    print(f": {', '.join(possible_answers)}")
+                print(colored("CORRECT: ", 'green') + ', '.join(possible_answers))
                 correct += 1
             else:
                 print(f"{colored('WRONG', 'red')}: '{src}'")

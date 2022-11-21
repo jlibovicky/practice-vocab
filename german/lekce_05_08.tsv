@@ -12,7 +12,7 @@ trotz (+ gen)	přes, navzdory
 ungeachtet (+ gen)	nehledě na
 unterhalb (+ gen)	pod (s genitivem)
 unweit (+ gen)	nedaleko
-während (+ gen)	během, za, po dobu (v průběhu)
+während (+ gen)	během, za, po dobu (v průběhu), zatímco (prep.)
 wegen (+ gen)	kvůli, z důvodu
 binnen (+ dat)	během, do, za dobu
 gemäß (+ dat)	podle (např. zákona)
@@ -50,9 +50,9 @@ anstrengend	namáhavý, náročný
 der Aufstieg, die Aufstiege	výstup (nahoru)
 außergewöhnlich (adj.)	neobyčejný
 belohnen	odměnit
-beschließen	rozhodnout (se), uzavřít, ukončit
+beschließen	uzavřít, ukončit, rozhodnout (se)
 beschriften	opatřit nápisem
-bestehen auf (+dat)	trvat na (něčem)
+bestehen auf (+ dat)	trvat na (něčem)
 duften	vonět
 einmalig	jedinečný
 entspannt	uvolněný, relaxační
@@ -70,7 +70,7 @@ verblüffen	ohromit, ohromovat
 das Wahrzeichen, die Wahrzeichen	symbol, znak
 das Weltall	vesmír
 werfen	hodit, házet
-verderben	zkazit (se)
+verderben	zkazit se, zkazit
 stoßen	narazit, udeřit, uhodit
 die Lebenshaltungkosten	životní náklady
 der Regelfall	obvyklý případ
@@ -123,7 +123,7 @@ eisern	železný
 erbaut	postavený
 erholsam	odpočinkový, rekreační
 die Festung	pevnost
-der Geschmack	záliba, vkus
+der Geschmack	záliba, vkus, chuť
 das Inland	tuzemsko, vnitrozemí
 intakt	neporušený
 das Kaiserreich	císařství
@@ -132,14 +132,14 @@ der Radweg	cyklostezka
 überdurchschnittlich	nadprůměrný
 umliegend	okolní
 als (conj.)	když (jednorázově v minulosti)
-bevor, ehe (conj.)	(dříve) než
+bevor, ehe (conj.)	než, dříve než
 kaum dass (conj.)	sotva, sotvaže
 nachdem (conj.)	když, poté co
 seitdem (conj.)	od té doby, co
 sobald (conj.)	jakmile
 zwar ... aber	sice ... ale
 solange (conj.)	pokud, dokud
-sooft (conj.)	kdykoli
+sooft (conj.)	kdykoli (conj.)
 während (conj.)	zatímco
 gegenüber dem Vorjahr	oproti minulému roku
 Schritt für Schritt	krok za krokem
@@ -147,3 +147,4 @@ zweifeln an	pochybovat o
 auf diese Weise	tímto způsobem
 aus zwei Teilen bestehen	skládat se ze dvou částí
 eine Prüfung ablegen	skládat zkoušku
+weder ... noch	ani ... ani
