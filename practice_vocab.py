@@ -11,19 +11,31 @@ SPACES = re.compile("  *")
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("data", type=argparse.FileType("r"))
-    parser.add_argument("-b", dest="both", action="store_true", default=False)
-    parser.add_argument("-r", dest="reverse", action="store_true", default=False)
+    parser.add_argument("data", type=argparse.FileType("r"), nargs="+")
+    parser.add_argument(
+        "-b", "--both", dest="both", action="store_true", default=False,
+        help="Test in both directions.")
+    parser.add_argument(
+        "-r", "--reverse", dest="reverse", action="store_true", default=False,
+        help="Test in reverse direction than the source file.")
+    parser.add_argument(
+        "-s", "--sample", dest="sample", type=int, default=None,
+        help="Number randomly sampled pairs to test.")
     args = parser.parse_args()
 
     pairs = []
-    for line in args.data:
-        src, tgt = line.strip().split("\t")
-        if not args.reverse:
-            pairs.append((src, tgt))
-        if args.both or args.reverse:
-            pairs.append((tgt, src))
+    for handle in args.data:
+        for line in handle:
+            src, tgt = line.strip().split("\t")
+            if not args.reverse:
+                pairs.append((src, tgt))
+            if args.both or args.reverse:
+                pairs.append((tgt, src))
+        handle.close()
     random.shuffle(pairs)
+
+    if args.sample is not None:
+        pairs = random.sample(pairs, args.sample)
 
     total = 0
     correct = 0
