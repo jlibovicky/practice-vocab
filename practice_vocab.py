@@ -35,7 +35,7 @@ def main():
     random.shuffle(pairs)
 
     if args.sample is not None:
-        pairs = random.sample(pairs, args.sample)
+        pairs = random.sample(pairs, min(args.sample, len(pairs)))
 
     total = 0
     correct = 0
