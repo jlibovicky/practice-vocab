@@ -54,7 +54,7 @@ def main():
                 SPACES.sub(" ", BRACKET.sub(" ", src)).strip().split(", "))
             answer = input()
             if answer.strip() in possible_answers:
-                print(colored("CORRECT: ", 'green') + ', '.join(possible_answers))
+                print(colored("CORRECT: ", 'green') + src)
                 correct += 1
             else:
                 print(f"{colored('WRONG', 'red')}: '{src}'")
